@@ -1,0 +1,25 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="!LWP)ob*.UTg;9_v|NEM">KK</variable></variables><block type="device_print_message" id="uFU{fBPXPHzz2NM0Wijj" disabled="true" x="-37" y="-165"><value name="text"><shadow type="text"><field name="TEXT">Hello!</field></shadow><block type="device_get_light_level" id="$vN-|0ttSm{%`;iZGbV8" disabled="true"></block></value></block><block type="device_forever" id="rE;^SYg1gy8AE2vRNu#z" x="-556" y="-128"><statement name="HANDLER"><block type="controls_if" id="uH#Nr7,;[(MNL@u#-03Y"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="|$Hr),`jKDn8E^rQAbIr"><field name="OP">GT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_get_light_level" id="VyEh#I_GoaN4{n`GV`{A"></block></value><value name="B"><shadow type="math_number" id="`ct}gq5/7+}668TLlbAS"><field name="NUM">10</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="!fU8vofOAS}``Ap1qIp9"><field name="LEDS">`
+        . # . # . 
+        . # . # . 
+        . . . . . 
+        # . . . # 
+        . # # # .
+        `</field><next><block type="controls_if" id="cH_4McY-[Kqf7#w=z,KW"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="0qSrfL(*C_hWzpU{pVz)"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="UHEjifEU?83WVgV!uFxg"><field name="VAR" id="!LWP)ob*.UTg;9_v|NEM">KK</field></block></value><value name="B"><shadow type="math_number" id="@[P*NyAfnv)Um]!JF~i,"><field name="NUM">0</field></shadow></value></block></value><statement name="DO0"><block type="radio_datagram_send_string" id="t:qFLk+qGE|!^d@edYOu"><value name="msg"><shadow type="text" id="^R91:%k-;~@,4cdrR=B|"><field name="TEXT">A2</field></shadow></value><next><block type="variables_set" id="bd@S,*1MH%W~40e#2^5i"><field name="VAR" id="!LWP)ob*.UTg;9_v|NEM">KK</field><value name="VALUE"><shadow type="math_number" id="xwYl[o^2D)(GqGXU)]j2"><field name="NUM">5</field></shadow></value></block></next></block></statement></block></next></block></statement><statement name="ELSE"><block type="device_show_leds" id="W~u~C.3jnOC[wh2WEp3s"><field name="LEDS">`
+        # # # # # 
+        # # # # # 
+        # # # # # 
+        # # # # # 
+        # # # # #
+        `</field></block></statement></block></statement></block><block type="pxt-on-start" id="LBLv^~uk,_vO[Z%NKu?*" x="282" y="-119"><statement name="HANDLER"><block type="radio_set_group" id="5pURm]!mZcwLB|ZH)dPx"><value name="ID"><shadow type="math_number_minmax" id="+8~44X`#-=s{hFOD;:pd"><mutation min="0" max="255" label="Id" precision="0"></mutation><field name="SLIDER">123</field></shadow></value><next><block type="variables_set" id="0MIlvE:uhuBB00[/LX(?"><field name="VAR" id="!LWP)ob*.UTg;9_v|NEM">KK</field><value name="VALUE"><shadow type="math_number" id="@dc0~n.y]pDN%=U^U,F*"><field name="NUM">0</field></shadow></value></block></next></block></statement></block><block type="controls_if" id="c)Qp)yM+{H/sf_gD}eZF" disabled="true" x="0" y="0"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="O-{7xs2B@z8hJs7RA6uE" disabled="true"><field name="OP">GT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_get_light_level" id="_,TdGjS,WnQ^*QpRY/`4" disabled="true"></block></value><value name="B"><shadow type="math_number" id="kHm?{k;OFs=|%v?s.SA?" disabled="true"><field name="NUM">10</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="L~DkPK/D96ZarSdagRi?" disabled="true"><field name="LEDS">`
+        . # . # . 
+        . # . # . 
+        . . . . . 
+        . . . . . 
+        # # # # #
+        `</field></block></statement><statement name="ELSE"><block type="radio_datagram_send_string" id="G=Z!b2j#YCr`jZh)?lPq" disabled="true"><value name="msg"><shadow type="text" id="MRj+pG.iw$fO|%r2ThO)" disabled="true"><field name="TEXT">C1</field></shadow></value><next><block type="device_show_leds" id="!)eumJ~`P)BypCY5EG46" disabled="true"><field name="LEDS">`
+        # # # # # 
+        # # # # # 
+        # # # # # 
+        # # # # # 
+        # # # # #
+        `</field></block></next></block></statement></block></xml>
